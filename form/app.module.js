@@ -10,15 +10,17 @@ var core_1 = require("@angular/core");
 // import { NgModule, enableProdMode }  from '@angular/core';
 // enableProdMode();
 var platform_browser_1 = require("@angular/platform-browser");
-var basic_component_1 = require("./basic.component");
+var forms_1 = require("@angular/forms");
+var form_component_1 = require("./form.component");
+var name_address_component_1 = require("./name-address.component");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [basic_component_1.FormComponent],
-            bootstrap: [basic_component_1.FormComponent]
+            imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, forms_1.ReactiveFormsModule],
+            declarations: [form_component_1.Form, name_address_component_1.NameAddressForm],
+            bootstrap: [form_component_1.Form]
         })
     ], AppModule);
     return AppModule;
