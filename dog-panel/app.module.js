@@ -12,13 +12,14 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var dog_panel_component_1 = require("./dog-panel.component");
 var curlyquotes_pipe_1 = require("./curlyquotes.pipe");
+var dog_detail_component_1 = require("./dog-detail.component");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule],
-            declarations: [dog_panel_component_1.DogPanel, curlyquotes_pipe_1.CurlyQuotesPipe],
+            declarations: [dog_panel_component_1.DogPanel, curlyquotes_pipe_1.CurlyQuotesPipe, dog_detail_component_1.DogDetail],
             bootstrap: [dog_panel_component_1.DogPanel]
         })
     ], AppModule);

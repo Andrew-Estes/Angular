@@ -1,0 +1,59 @@
+GQQH	GQQH			Passed in	
+GQPA	GQPA			Passed in			
+GQPF	GQPF			Passed in	
+GQPD	GQPDx10			Passed in
+GQQM	GQQM			Passed in
+GQSR	   			Passed in
+GQCB				Passed in
+GFOC    GFOC			Passed in
+GFOF    GFOF			From GQOF
+	GFWE			From GQWE
+
+AAFI  	AAFI
+AAB2	AAB2
+AAB3	AAB3
+AAFL	AAFL
+AAFI	AAFI
+AAB2	AAB2
+AAB3	AAB3
+AAFL	AAFL
+  	AAFI
+	AAB2
+	AAB3
+	AAFL
+	AAFI
+	AAB2
+	AAB3
+	AAFL
+  	AAFI
+	AAB2
+	AAB3
+	AAFL
+	AAFI
+	AAB2
+	AAB3
+	AAFL
+  	AAFI
+	AAB2
+	AAB3
+	AAFL
+	AAFI
+	AAB2
+	AAB3
+	AAFL
+  	AAFI
+	AAB2
+	AAB3
+	AAFL
+	AAFI
+	AAB2
+	AAB3
+	AAFL
+  	AAFI
+	AAB2
+	AAB3
+	AAFL
+	AAFI
+	AAB2
+	AAB3
+	AAFL

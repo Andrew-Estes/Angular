@@ -5,37 +5,47 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var dog_1 = require("./model/dog");
 var dog_data_1 = require("./model/dog-data");
 var DogPanel = /** @class */ (function () {
     function DogPanel() {
-        var _this = this;
+        //  private _dog: Dog;
         this.mockDogs = dog_data_1.MockDogs.SIX;
-        this.buyTemplate = "<div class=\"ad\"><h1>Buy now!</h1>\n    <p>Vet Pro is the only way to go!</p></div>";
-        this.delayedMessage = new Promise(function (resolve, reject) {
-            setTimeout(function () { return resolve(_this.buyTemplate); }, 4000);
-        });
-        this._dog = new dog_1.Dog(1, 'Rover', 5, "mongrel", true);
-        console.info('Created', this);
+        //  buyTemplate: string = `<div class="ad"><h1>Buy now!</h1>
+        //  <p>Vet Pro is the only way to go!</p></div>`;
+        //  delayedMessage: Promise<string> = new Promise((resolve, reject) => {setTimeout(() => resolve(this.buyTemplate), 4000);
+        //  });
+        //
+        //  constructor() {
+        //      this._dog = new Dog(1, 'Rover', 5, "mongrel", true);
+        //      console.info('Created', this);
+        //  }
+        //  get dog() { return this._dog; }
+        //  
+        //  public payBill(event: MouseEvent) {
+        //      console.info('payBill() recieved event', event );
+        //      let dogIndex: number =
+        //      event.target.parentElement.querySelector('#dogIndex').innerText;
+        //      console.info('scraped Dog index = ', dogIndex);
+        //      this.dog.balance = 0;
+        //      console.info(this.dog);
+        //  }
     }
-    Object.defineProperty(DogPanel.prototype, "dog", {
-        get: function () { return this._dog; },
-        enumerable: true,
-        configurable: true
-    });
+    DogPanel.prototype.onMessageFromDetail = function (event) {
+        var message = event[0];
+        var dogActedOn = event[1];
+        var paidAmount = event[2];
+        console.info('Received message', event[0], event[1]);
+        this.panelStatus = message + ' of $' + paidAmount + ' for ' + dogActedOn.name;
+    };
     DogPanel = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'app-root',
-            templateUrl: "dog-panel.component.1.html",
+            templateUrl: "dog-panel.component.3.html",
             styleUrls: ['dog-panel.component.css']
-        }),
-        __metadata("design:paramtypes", [])
+        })
     ], DogPanel);
     return DogPanel;
 }());

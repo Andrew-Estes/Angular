@@ -6,10 +6,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { DogPanel }  from './dog-panel.component';
 import {CurlyQuotesPipe} from './curlyquotes.pipe';
+import {DogDetail} from './dog-detail.component';
 
 @NgModule({
   imports:      [ BrowserModule  ],
-  declarations: [ DogPanel, CurlyQuotesPipe ],
+  declarations: [ DogPanel, CurlyQuotesPipe, DogDetail ],
   bootstrap:    [ DogPanel ]
 })
 export class AppModule { }

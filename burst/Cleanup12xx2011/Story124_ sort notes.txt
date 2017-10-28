@@ -1,0 +1,8 @@
+		GZXI_ITIN_REPLY *pReply; // so I can look at what is there.
+
+
+			pReply = &sortedReplies->itinReplies[s];  // so I can look at what is there.
+
+
+
+Not enough information here to sort out.
